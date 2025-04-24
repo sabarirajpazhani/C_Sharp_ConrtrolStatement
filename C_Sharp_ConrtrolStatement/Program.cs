@@ -80,13 +80,35 @@ namespace C_Sharp_ControlStatement
             }
         }
 
+        public static void nestedIfStatement()
+        {
+            Console.Write("Enter the Mumber: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            if(num != 0)
+            {
+                if(num > 0)
+                {
+                    Console.WriteLine("Your Entered number is Positive");
+                }
+                else
+                {
+                    Console.WriteLine("Your Entered number is Negative");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Your Entered number is Zero");
+            }
+        }
 
         static void Main(String[] args)
         {
-            SwitchStatement();   
-            ifElseStatement();
-            ifStatement();
-            ifElseIfStatement();
+            //SwitchStatement();   
+            //ifElseStatement();
+            //ifStatement();
+            //ifElseIfStatement();
+            nestedIfStatement();
         }
     }
 }
