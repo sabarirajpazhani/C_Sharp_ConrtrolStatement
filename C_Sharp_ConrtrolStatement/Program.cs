@@ -104,10 +104,10 @@ namespace C_Sharp_ControlStatement
 
         static void Main(String[] args)
         {
-            //SwitchStatement();   
-            //ifElseStatement();
-            //ifStatement();
-            //ifElseIfStatement();
+            SwitchStatement();
+            ifElseStatement();
+            ifStatement();
+            ifElseIfStatement();
             nestedIfStatement();
         }
     }
