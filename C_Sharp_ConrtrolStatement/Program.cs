@@ -26,9 +26,44 @@ namespace C_Sharp_ControlStatement
                     break;
             }
         }
+
+        public static void ifElseStatement()
+        {
+            {
+                Console.WriteLine("Enter your age to know you are eligible for voting or not");
+
+                Console.Write("Enter your Age :");
+                int age = Convert.ToInt32(Console.ReadLine());
+
+                if (age >= 18)
+                {
+                    Console.WriteLine("Your are Eligible for Voting :)");
+                }
+                else
+                {
+                    Console.WriteLine("Your not eligible for Voting :( ");
+
+                }
+            }
+            
+        }
+
+        public static void ifStatement()
+        {
+            Console.WriteLine("Enter the number");
+            int num = Convert.ToInt32(Console.ReadLine());  
+
+            if(num < 10)
+            {
+                Console.WriteLine("Your Entered Mumber is Single Digit");
+            }
+        }
         static void Main(String[] args)
         {
-            SwitchStatement();
+            SwitchStatement();   //Switch statement
+            ifElseStatement();
+            ifStatement();
+
         }
     }
 }
