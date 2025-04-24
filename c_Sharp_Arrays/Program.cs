@@ -34,12 +34,47 @@ namespace c_Sharp_Arrays
             }
         }
 
+        public static void arraysMethods()
+        {
+            int[] a = new int[6] { 10, 11, 2, 2, 40, 3 };
+
+            Array.Sort(a);
+            Array.Reverse(a);
+
+            foreach(int i in a)
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("Length of the array: "+ a.Length);
+            Console.WriteLine("Index: "+Array.IndexOf(a, 2));
+            Console.WriteLine("Last Index: "+Array.LastIndexOf(a, 2));
+
+            int[] copy = new int[a.Length];
+
+            Array.Copy(a, copy, a.Length);
+
+            Console.WriteLine("New copied array: ");
+            foreach(int i in copy)
+            {
+                Console.WriteLine(i);
+            }
+
+            Console.WriteLine("Array Element is exisit: ");
+            Console.WriteLine(Array.Exists(a, x => x == 3));
+
+            //resize the array
+            Array.Resize(ref a, 7);
+            Console.WriteLine("New length: "+ a.Length);
+
+        }
 
         static void Main(String[] args)
         {
-            BasicArray();
+            //BasicArray();
 
-            Array1();
+            //Array1();
+
+            arraysMethods();
 
 
 
