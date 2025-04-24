@@ -45,12 +45,37 @@ namespace C_Sharp_Loops
                 Console.WriteLine("Hello");
             }
         }
+
+        public static void forEachInLoop()
+        {
+            char[] ch = { 'f', 'm', 'm', 'f', 'm' };
+
+            int maleCount = 0;
+            int femaleCount = 0;
+
+            foreach(char i in ch)
+            {
+                if (i == 'm'){
+                    maleCount++;
+                }
+                if (i == 'f')
+                {
+                    femaleCount++;
+                }
+            }
+
+            Console.WriteLine($"Male count is {maleCount}");
+            Console.WriteLine($"Female Count is {femaleCount}");
+
+        }
         static void Main(String[] args)
         {
             forLoop();
             whileLoop();
             doWhileLoop();
             infinateLoop();
+
+            forEachInLoop();
 
         }
     }
