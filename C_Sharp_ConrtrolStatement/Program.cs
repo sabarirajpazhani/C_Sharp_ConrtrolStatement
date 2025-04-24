@@ -58,12 +58,35 @@ namespace C_Sharp_ControlStatement
                 Console.WriteLine("Your Entered Mumber is Single Digit");
             }
         }
+
+        public static void ifElseIfStatement()
+        {
+            int a = 100;
+            int b = 150;
+            int c = 50;
+
+            if(a>b && a > c)
+            {
+                Console.WriteLine(" a is Greater than all");
+            }
+
+            else if (b > a && b > c)
+            {
+                Console.WriteLine("b is greater than all");
+            }
+            else
+            {
+                Console.WriteLine("c is greater than all");
+            }
+        }
+
+
         static void Main(String[] args)
         {
-            SwitchStatement();   //Switch statement
+            SwitchStatement();   
             ifElseStatement();
             ifStatement();
-
+            ifElseIfStatement();
         }
     }
 }
