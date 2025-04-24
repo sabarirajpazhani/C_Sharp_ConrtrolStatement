@@ -37,11 +37,20 @@ namespace C_Sharp_Loops
             }
             while (i <= num);
         }
+
+        public static void infinateLoop()
+        {
+            for(; ; )
+            {
+                Console.WriteLine("Hello");
+            }
+        }
         static void Main(String[] args)
         {
             forLoop();
             whileLoop();
             doWhileLoop();
+            infinateLoop();
 
         }
     }
