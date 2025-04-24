@@ -102,6 +102,14 @@ namespace C_Sharp_ControlStatement
             }
         }
 
+        public static void ternaryOperator()
+        {
+            int a = 10;
+            int b = 20;
+
+            String str = (a > b) ? "a is greater" : "b is greater";
+            Console.WriteLine(str);
+        }
         static void Main(String[] args)
         {
             SwitchStatement();
@@ -109,6 +117,7 @@ namespace C_Sharp_ControlStatement
             ifStatement();
             ifElseIfStatement();
             nestedIfStatement();
+            ternaryOperator();
         }
     }
 }
