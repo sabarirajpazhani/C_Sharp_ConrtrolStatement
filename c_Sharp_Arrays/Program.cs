@@ -65,20 +65,16 @@ namespace c_Sharp_Arrays
             //resize the array
             Array.Resize(ref a, 7);
             Console.WriteLine("New length: "+ a.Length);
-
         }
+
 
         static void Main(String[] args)
         {
-            //BasicArray();
+            BasicArray();
 
-            //Array1();
+            Array1();
 
             arraysMethods();
-
-
-
-
 
         }
     }
