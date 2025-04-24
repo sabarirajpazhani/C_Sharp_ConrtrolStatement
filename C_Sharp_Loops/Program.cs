@@ -5,14 +5,31 @@ namespace C_Sharp_Loops
 {
     public class Program
     {
-        static void Main(String[] args)
+        public static void forLoop()
         {
-            int[] a = { 1, 2, 3, 4 };
-
-            foreach (int i in a)
+            for (int i = 0; i <= 10; i++)
             {
                 Console.WriteLine(i);
             }
+        }
+
+        public static void whileLoop()
+        {
+            int num = 10;
+
+            int i = 0;
+
+            while (i <= num)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+        }
+        static void Main(String[] args)
+        {
+            forLoop();
+            whileLoop();
+
         }
     }
 }
