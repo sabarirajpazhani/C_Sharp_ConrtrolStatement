@@ -25,10 +25,23 @@ namespace C_Sharp_Loops
                 i++;
             }
         }
+
+        public static void doWhileLoop()
+        {
+            int num  = 20;
+            int i = 21;
+            do
+            {
+                Console.WriteLine("Hello World");
+                i++;
+            }
+            while (i <= num);
+        }
         static void Main(String[] args)
         {
             forLoop();
             whileLoop();
+            doWhileLoop();
 
         }
     }
