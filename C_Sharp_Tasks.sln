@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_ConrtrolStatement",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C_Sharp_Loops", "C_Sharp_Loops\C_Sharp_Loops.csproj", "{ECB37292-EB58-461C-B856-B822BC83AB1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c_Sharp_Arrays", "c_Sharp_Arrays\c_Sharp_Arrays.csproj", "{BCC1A4C3-FD2F-44CB-B5FA-A0E9F2849F07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ECB37292-EB58-461C-B856-B822BC83AB1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECB37292-EB58-461C-B856-B822BC83AB1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECB37292-EB58-461C-B856-B822BC83AB1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCC1A4C3-FD2F-44CB-B5FA-A0E9F2849F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCC1A4C3-FD2F-44CB-B5FA-A0E9F2849F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCC1A4C3-FD2F-44CB-B5FA-A0E9F2849F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCC1A4C3-FD2F-44CB-B5FA-A0E9F2849F07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
