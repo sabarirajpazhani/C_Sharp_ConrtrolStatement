@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Threading.Channels;
 
 namespace c_Sharp_Arrays
 {
@@ -85,12 +86,33 @@ namespace c_Sharp_Arrays
                 Console.WriteLine(i);
             }
 
-
-             
-
         }
 
+        public static void twoDemensionalArray()
+        {
+            int[,] arr = new int[2, 3];
+
+            for (int i = 0; i < 2; i++) {
+                for (int j = 0; j < 3; j++)
+                {
+                    arr[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
+            }
+
+            Console.WriteLine("No. of rows: "+ arr.GetLength(0));
+            Console.WriteLine("No. columns: " + arr.GetLength(1));
+
+
+            foreach(int i in arr)
+            {
+                Console.Write(i+" ");
+            }
+
             
+        }
+
+        
+
         static void Main(String[] args)
         {
             //BasicArray();
@@ -99,7 +121,12 @@ namespace c_Sharp_Arrays
 
             //arraysMethods();
 
-            importantMethods();
+            //importantMethods();
+
+            //-------------------------------- Multi Demensional Array -----------------------------
+
+            //twoDemensionalArray();
+            twoDemensionMethods();
 
         }
     }
