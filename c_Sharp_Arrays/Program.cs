@@ -174,6 +174,24 @@ namespace c_Sharp_Arrays
             Console.WriteLine();
         }
 
+        public static void jaggedArray()
+        {
+            int[][] arr = new int[3][];
+
+            arr[0] = new int[] { 1, 2 };
+            arr[1] = new int[] { 3, 4, 5 };
+            arr[2] = new int[] { 6 };
+
+            for(int i =0; i< arr.GetLength(0); i++)
+            {
+                foreach(int j in arr[i])
+                {
+                    Console.Write(j + " ");
+                }
+                Console.WriteLine();
+            }
+
+        }
         static void Main(String[] args)
         {
             //BasicArray();
@@ -189,7 +207,9 @@ namespace c_Sharp_Arrays
             //twoDemensionalArray();
             //twoDemensionMethods();
 
-            threeDemension();
+            //threeDemension();
+
+            jaggedArray();
         }
     }
 }
