@@ -129,22 +129,67 @@ namespace c_Sharp_Arrays
             Console.WriteLine("Get the value: "+arr.GetValue(0,2));
         }
 
+        public static void threeDemension()
+        {
+            //int[,,] arr = new int[2, 2, 3];   //declaration
+
+            int[,,] arr = new int[,,]
+            {
+                {
+                    { 1, 2, 3, 4 },
+                    { 5, 6, 7, 8 },
+                    { 9, 10, 11, 12 }
+                },
+                {
+                    { 13, 14, 15, 16 },
+                    { 17, 18, 19, 20 },
+                    { 21, 22, 23, 24 }
+                },
+                {
+                    { 25, 26, 27, 28 },
+                    { 29, 30, 31, 32 },
+                    { 33, 34, 35, 36 }
+                }
+            };
+              
+            Console.WriteLine("Depth Length: "+arr.GetLength(0));   //depath - 0
+            Console.WriteLine("Row Length: " + arr.GetLength(1));   // row - 1
+            Console.WriteLine("Row Length: " + arr.GetLength(2));   // clo - 2
+
+            Console.WriteLine("Particular Value: " + arr[1, 0, 2]);
+
+
+            for(int i = 0; i<arr.GetLength(0); i++)
+            {
+                for(int j=0; j < arr.GetLength(1); j++)
+                {
+                    for(int k=0; k < arr.GetLength(2); k++)
+                    {
+                        Console.Write($"({i},{j},{k}) - "+arr[i, j, k]+" ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
 
         static void Main(String[] args)
         {
-            BasicArray();
+            //BasicArray();
 
-            Array1();
+            //Array1();
 
-            arraysMethods();
+            //arraysMethods();
 
-            importantMethods();
+            //importantMethods();
 
-            //-------------------------------- Multi Demensional Array -----------------------------
+            ////-------------------------------- Multi Demensional Array -----------------------------
 
-            twoDemensionalArray();
-            twoDemensionMethods();
+            //twoDemensionalArray();
+            //twoDemensionMethods();
 
+            threeDemension();
         }
     }
 }
