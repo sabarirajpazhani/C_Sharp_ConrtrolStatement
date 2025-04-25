@@ -32,6 +32,8 @@ namespace c_Sharp_Arrays
             {
                 Console.WriteLine(i);
             }
+
+            Console.WriteLine(str.GetLength(0));  //get the number of element in specific demensions
         }
 
         public static void arraysMethods()
@@ -39,7 +41,7 @@ namespace c_Sharp_Arrays
             int[] a = new int[6] { 10, 11, 2, 2, 40, 3 };
 
             Array.Sort(a);
-            Array.Reverse(a);
+            Array.Reverse(a);   
 
             foreach(int i in a)
             {
@@ -67,14 +69,37 @@ namespace c_Sharp_Arrays
             Console.WriteLine("New length: "+ a.Length);
         }
 
+        public static void importantMethods()
+        {
+            int[] arr = { 10, 30, 40, 60, 20, 80 };
 
+            Console.WriteLine(Array.Exists(arr, x => x > 50));   //Exists
+             
+            int find = Array.Find(arr, x => x > 50);              //Find
+            Console.WriteLine($"Find Method: {find}");
+
+            int[] findAll = Array.FindAll(arr,x => x > 50);         //FindAll
+
+            foreach(int i in findAll)
+            {
+                Console.WriteLine(i);
+            }
+
+
+             
+
+        }
+
+            
         static void Main(String[] args)
         {
-            BasicArray();
+            //BasicArray();
 
-            Array1();
+            //Array1();
 
-            arraysMethods();
+            //arraysMethods();
+
+            importantMethods();
 
         }
     }
