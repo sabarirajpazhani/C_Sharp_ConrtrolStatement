@@ -86,6 +86,8 @@ namespace c_Sharp_Arrays
                 Console.WriteLine(i);
             }
 
+            Console.WriteLine("Maximum element : "+ arr.Max());
+            Console.WriteLine("Minimum element : " + arr.Min());
         }
 
         public static void twoDemensionalArray()
@@ -111,21 +113,36 @@ namespace c_Sharp_Arrays
             
         }
 
-        
+        public static void twoDemensionMethods()
+        {
+            int[,] arr = { { 1, 2, 3 }, { 5, 6, 7 } };
+
+            arr.SetValue(10, 0, 2);        //setvalues
+
+            Console.WriteLine("Setting values: ");
+
+            foreach (int i in arr)
+            {
+                Console.Write(i + " ");
+            }
+
+            Console.WriteLine("Get the value: "+arr.GetValue(0,2));
+        }
+
 
         static void Main(String[] args)
         {
-            //BasicArray();
+            BasicArray();
 
-            //Array1();
+            Array1();
 
-            //arraysMethods();
+            arraysMethods();
 
-            //importantMethods();
+            importantMethods();
 
             //-------------------------------- Multi Demensional Array -----------------------------
 
-            //twoDemensionalArray();
+            twoDemensionalArray();
             twoDemensionMethods();
 
         }
