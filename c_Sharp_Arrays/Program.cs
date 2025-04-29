@@ -192,6 +192,29 @@ namespace c_Sharp_Arrays
             }
 
         }
+
+        public static void DateTimeInfo()
+        {
+            DateTime now = DateTime.Now;
+            Console.WriteLine("Date and Time: " + now);
+
+            DateTime utc = DateTime.UtcNow;
+
+            DateOnly date = DateOnly.FromDateTime(DateTime.Now);
+            TimeOnly time = TimeOnly.FromDateTime(DateTime.Now);
+
+            Console.WriteLine("Date: " + date);
+            Console.WriteLine("Time: " + time);
+
+            TimeZoneInfo india = TimeZoneInfo.FindSystemTimeZoneById("India Standard Time");
+            DateTime LocalTime = TimeZoneInfo.ConvertTimeFromUtc(utc, india);
+
+            TimeZoneInfo sweden = TimeZoneInfo.FindSystemTimeZoneById("W. Europe Standard Time");
+            DateTime swedenTime = TimeZoneInfo.ConvertTimeFromUtc(utc, sweden);
+
+            Console.WriteLine("Indian Time" + LocalTime);
+            Console.WriteLine("Sweden Time" + swedenTime);  
+        }
         static void Main(String[] args)
         {
             //BasicArray();
@@ -209,7 +232,9 @@ namespace c_Sharp_Arrays
 
             //threeDemension();
 
-            jaggedArray();
+            //jaggedArray();
+
+            DateTimeInfo();
         }
     }
 }
